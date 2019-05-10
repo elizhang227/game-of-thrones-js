@@ -1,5 +1,3 @@
-console.log('test');
-
 console.log(`There are ${characters.length} characters in the array.`);
 
 count = 0;
