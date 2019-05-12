@@ -1,3 +1,5 @@
+
+
 console.log(`There are ${characters.length} characters in the array.`);
 
 count = 0;
@@ -62,8 +64,30 @@ characters.forEach(function(character) {
 //console.log(`There are ${count} characters not in the tv show.`);
 
 let tList = [];
-let firstName = '';
 characters.forEach(function(character) {
-    firstName = character.name.substring(0, '');
+    if (character.name.includes('Targaryen')) {
+        tList.push(character.name);
+    }
 })
-console.log(firstName);
+//console.log(`Here is a list of all Targaryens: ${tList}`);
+
+let dict = {'a': 1, 'b': 2};
+//let test = [];
+characters.forEach(function(character) {
+    for (const [key, value] of Object.entries(dict)) {
+        console.log(key,value);
+    }
+    // if (character.allegiances in dict) {
+    //     console.log('true');
+    //     //dict.character.allegiances += 1;
+    // }
+    // else {
+    //     character.allegiances.forEach(function(allegiance) {
+    //         test.push(character.allegiances);
+    //     })
+    //     //dict.chararacter.allegiances[0];
+    //     //console.log('false');
+    //     //dict.character.allegiances = 1; 
+    // }
+});
+console.log(dict);
