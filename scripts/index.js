@@ -91,3 +91,5 @@ characters.forEach(function(character) {
     // }
 });
 console.log(dict);
+
+
